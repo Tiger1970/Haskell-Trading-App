@@ -1,0 +1,23 @@
+cabal-version:      2.4
+name:               iron-condor-dsl
+version:            0.1.0.0
+build-type:         Simple
+
+library
+    exposed-modules:  Options.Strategy
+    hs-source-dirs:   src
+    build-depends:    base >=4.14 && <5,
+                       time
+    default-language: Haskell2010
+    ghc-options:      -Wall
+
+test-suite iron-condor-dsl-test
+    type:             exitcode-stdio-1.0
+    main-is:          Spec.hs
+    hs-source-dirs:   test
+    build-depends:    base >=4.14 && <5,
+                       time,
+                       iron-condor-dsl,
+                       hspec
+    default-language: Haskell2010
+    ghc-options:      -Wall
