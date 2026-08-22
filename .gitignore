@@ -1,5 +1,8 @@
 dist-newstyle/
 .stack-work/
+.ghc.environment.*
 *.o
 *.hi
-.ghc.environment.*
+*.dyn_o
+*.dyn_hi
+.apps/
